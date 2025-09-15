@@ -87,7 +87,7 @@ tab1, tab2, tab3 = st.tabs(["📊 Visuals", "🤖 RAG Chat", "📝 Feedback"])
 # ---------- Tab 1: Visualizations ----------
 with tab1:
     df = load_viz_df()
-    st.header("⚖️ Gonzalez Implementation — Visuals")
+    st.header("⚖️ Visuals")
     st.caption(f"Loaded **{len(df):,}** rows from {DB}.{SCHEMA}.{VIS_TABLE}")
 
     if st.toggle("Show columns (debug)", value=False):
@@ -298,5 +298,6 @@ with tab3:
 
             
             st.success("✅ Thank you for your feedback!")
+
 
 
