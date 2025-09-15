@@ -28,7 +28,7 @@ def get_session():
         return st.connection("snowflake").session()
 
 session = get_session()
-root = Root(session)
+
 
 # ----------------- Helpers -----------------
 def _align_xlabels_right(ax):
@@ -298,4 +298,5 @@ with tab3:
 
             
             st.success("✅ Thank you for your feedback!")
+
 
