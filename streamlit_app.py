@@ -6,7 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
-from snowflake.core import Root
 from snowflake.snowpark.context import get_active_session
 
 # ----------------- Config -----------------
@@ -299,3 +298,4 @@ with tab3:
 
             
             st.success("✅ Thank you for your feedback!")
+
